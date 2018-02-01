@@ -70,12 +70,6 @@ $ openssl s_server -key key.pem -cert cert.pem -accept 4433 -www -tls1
 $ openssl s_client -host pages.github.io -port 443 -servername pages.github.io -tls1_2
 
 CONNECTED(00000003)
-depth=2 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert High Assurance EV Root CA
-verify return:1
-depth=1 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 High Assurance Server CA
-verify return:1
-depth=0 C = US, ST = California, L = San Francisco, O = "GitHub, Inc.", CN = www.github.com
-verify return:1
 ---
 Certificate chain
  0 s:/C=US/ST=California/L=San Francisco/O=GitHub, Inc./CN=www.github.com
@@ -105,18 +99,7 @@ No ALPN negotiated
 SSL-Session:
     Protocol  : TLSv1.2
     Cipher    : ECDHE-RSA-AES128-GCM-SHA256
-    Session-ID: A52008F6ABE41A22D85D83E3A2B8644C0BA17570746CDCE74FBA9B31429FB3B5
-    Session-ID-ctx:
-    Master-Key: B1648E7C5020B2B8444110AC05382FB95833DBFEDFAF3C471E39C5FB1B9DB291A0B62C301C42992DB3922AC73ED13810
-    Key-Arg   : None
-    PSK identity: None
-    PSK identity hint: None
-    SRP username: None
-    TLS session ticket lifetime hint: 7200 (seconds)
-    TLS session ticket:
-    0000 - da f6 c3 92 65 fa 83 e9-d2 66 3c 7b d2 6c 7d 7c   ....e....f<{.l}|
     ...
-
     Start Time: 1517480966
     Timeout   : 7200 (sec)
     Verify return code: 0 (ok)
