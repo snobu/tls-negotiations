@@ -22,6 +22,9 @@ HKLM SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1
 HKLM SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server
 ```
 
+### Control SCHANNEL ciphers
+https://support.microsoft.com/en-us/help/245030/how-to-restrict-the-use-of-certain-cryptographic-algorithms-and-protoc
+
 ### How's my SSL?
   * https://www.howsmyssl.com/
   * JSON response: https://www.howsmyssl.com/a/check
