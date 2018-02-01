@@ -59,6 +59,7 @@ $ openssl s_server -key key.pem -cert cert.pem -accept 4433 -www -tls1
 
 ### Handshake specific protocol version with remote host
 
+```
 # openssl s_client -h
 
  # -ssl3         - just use SSLv3
