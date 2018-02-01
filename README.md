@@ -30,6 +30,9 @@ https://support.microsoft.com/en-us/help/245030/how-to-restrict-the-use-of-certa
 From https://support.microsoft.com/en-us/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework:
 ![System Default TLS versions](sys-default-tls-ver.png)
 
+### Test clients against bad SSL configs
+https://badssl.com
+
 ### How's my SSL?
   * https://www.howsmyssl.com/
   * JSON response: https://www.howsmyssl.com/a/check
