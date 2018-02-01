@@ -1,3 +1,5 @@
+The Visual Studio solution starts these 3 projects on F5 Debug:
+
 ![Screenshot](screenshot.png)
 
 # Top tips
