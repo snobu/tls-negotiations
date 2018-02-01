@@ -44,6 +44,8 @@ From https://support.microsoft.com/en-us/help/3154520/support-for-tls-system-def
 
 ### Listen for specific protocol version locally
 
+NOTE: Works fine in WSL.
+
 ```bash
 # Generate self-signed certificate
 $ openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes
@@ -58,6 +60,8 @@ $ openssl s_server -key key.pem -cert cert.pem -accept 4433 -www -tls1
 ```
 
 ### Handshake specific protocol version with remote host
+
+NOTE: Works fine in WSL.
 
 ```
 # openssl s_client -h
@@ -107,6 +111,8 @@ SSL-Session:
 ```
 
 ### Enumerate remote ciphers with `nmap`
+
+NOTE: Doesn't work in WSL. Use real Linux or nmap for Windows.
 
 ```bash
 $ sudo apt install nmap -y
