@@ -83,3 +83,38 @@ PORT    STATE SERVICE        VERSION
 |     cipher preference: server
 |_  least strength: A
 ```
+
+### Traffic Analysis of an SSL/TLS Session
+http://blog.fourthbit.com/2014/12/23/traffic-analysis-of-an-ssl-slash-tls-session
+
+```
+  03 01          SSL version (TLS 1.0)
+  03 02          SSL version (TLS 1.1)
+  03 03          SSL version (TLS 1.2)
+  03 03          SSL version (TLS 1.3), negotiates version 1.3 through protocol extension
+
+---
+
+ServerHello message
+
+0000   16 03 01 00 35 02 00 00 31 03 01 54 9a ab 72 85  ....5...1..T..r.
+0010   91 a4 a7 a9 27 fe 3d e4 da f6 38 a5 aa 6e 5a 2f  ....'.=...8..nZ/
+0020   31 90 5b 41 b0 5d de d8 9d ae f6 00 00 35 00 00  1.[A.].......5..
+0030   09 ff 01 00 01 00 00 23 00 00                    .......#..
+
+       16             Handshake protocol type
+       03 01          SSL version (TLS 1.0)
+       35             Record length (53 bytes)
+
+       02             ServerHello message type
+       00 00 31       Message length (49 bytes)
+       03 01          SSL version (TLS 1.0)
+       54 9a ab 72    First 4 bytes of random (Unix time)
+       85 .. f6       Last 28 bytes of the random number
+       00             Session Id length
+       00 35          Selected Cipher Suite (RSA with AES-256-CBC SHA)
+       00             Selected compression method (null)
+       00 09          Extensions length
+       ff 01 00 01 00 Extension (Renegotiation Info)
+       00 23 00 00    Extension (SessionTicket TLS)
+```
