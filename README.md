@@ -4,6 +4,10 @@ The Visual Studio solution starts these 3 projects on F5 Debug:
 
 # Top tips
 
+### TLS System Default Versions in Windows
+From https://support.microsoft.com/en-us/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework:
+![System Default TLS versions](sys-default-tls-ver.png)
+
 ### What's new in .NET Framework 4.7 (CTRL+F for TLS)
 https://docs.microsoft.com/en-us/dotnet/framework/whats-new/#v47
 
@@ -25,10 +29,6 @@ HKLM SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1
 
 ### Control SCHANNEL ciphers
 https://support.microsoft.com/en-us/help/245030/how-to-restrict-the-use-of-certain-cryptographic-algorithms-and-protoc
-
-### TLS System Default Versions in Windows
-From https://support.microsoft.com/en-us/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework:
-![System Default TLS versions](sys-default-tls-ver.png)
 
 ### Test clients against bad SSL configs
 https://badssl.com
