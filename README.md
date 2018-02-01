@@ -25,7 +25,7 @@ https://docs.microsoft.com/en-us/dotnet/framework/whats-new/#v47
 ```bash
 $ openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes
 
-# Spin up a simply web server on `-accept` port that listens to one protocol version only
+# Spin up a simple web server on port 4433 that talks one protocol version only
 $ openssl s_server -key key.pem -cert cert.pem -accept 4433 -www -tls1
 
  # -ssl3         - just use SSLv3
@@ -34,9 +34,9 @@ $ openssl s_server -key key.pem -cert cert.pem -accept 4433 -www -tls1
  # -tls1         - just use TLSv1
 ```
 
-### Enumerate remote ciphers with `nmap`:
+### Enumerate remote ciphers with `nmap`
 
-```
+```bash
 $ sudo apt install nmap -y
 
 $ nmap -sV --script ssl-enum-ciphers -p 443 pages.github.io
