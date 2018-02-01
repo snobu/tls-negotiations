@@ -88,6 +88,7 @@ PORT    STATE SERVICE        VERSION
 http://blog.fourthbit.com/2014/12/23/traffic-analysis-of-an-ssl-slash-tls-session
 
 ```
+  03 00          SSL version (SSL 3.0)
   03 01          SSL version (TLS 1.0)
   03 02          SSL version (TLS 1.1)
   03 03          SSL version (TLS 1.2)
