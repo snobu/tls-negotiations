@@ -25,6 +25,10 @@ HKLM SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1
 ### Control SCHANNEL ciphers
 https://support.microsoft.com/en-us/help/245030/how-to-restrict-the-use-of-certain-cryptographic-algorithms-and-protoc
 
+### TLS System Default Versions in Windows
+From https://support.microsoft.com/en-us/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework:
+![System Default TLS versions](sys-default-tls-ver.png)
+
 ### How's my SSL?
   * https://www.howsmyssl.com/
   * JSON response: https://www.howsmyssl.com/a/check
