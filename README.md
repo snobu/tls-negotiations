@@ -23,6 +23,7 @@ https://docs.microsoft.com/en-us/dotnet/framework/whats-new/#v47
 ### Listen for specific protocol version locally
 
 ```bash
+# Generate self-signed certificate
 $ openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes
 
 # Spin up a simple web server on port 4433 that talks one protocol version only
