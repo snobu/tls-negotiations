@@ -33,7 +33,7 @@ https://support.microsoft.com/en-us/help/245030/how-to-restrict-the-use-of-certa
   * https://www.ssllabs.com/ssltest/
   * API Documentation: https://github.com/ssllabs/ssllabs-scan/blob/stable/ssllabs-api-docs.md
 
-### SSL Labs exact protocol version listeners (Thank you, Ivan!)
+### SSL Labs one-version-only listeners (Thank you, Ivan!)
   * **SSL 3.0**-only listener at https://ssllabs.com:10300/
   * **TLS 1.0**-only listener at https://ssllabs.com:10301/
   * **TLS 1.1**-only listener at https://ssllabs.com:10302/
