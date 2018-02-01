@@ -7,12 +7,12 @@
 https://docs.microsoft.com/en-us/dotnet/framework/whats-new/#v47
 
 * How's my SSL?
-** https://www.howsmyssl.com/
-** JSON response: https://www.howsmyssl.com/a/check
+  * https://www.howsmyssl.com/
+  * JSON response: https://www.howsmyssl.com/a/check
 
 * Qualys SSL Labs (Ivan Ristic)
-** https://www.ssllabs.com/ssltest/
-** API Documentation: https://github.com/ssllabs/ssllabs-scan/blob/stable/ssllabs-api-docs.md
+  * https://www.ssllabs.com/ssltest/
+  * API Documentation: https://github.com/ssllabs/ssllabs-scan/blob/stable/ssllabs-api-docs.md
 
 * Enumerate remote ciphers with `nmap`:
 
