@@ -1,6 +1,5 @@
 ![Screenshot](screenshot.png)
 
-
 # Top tips
 
 ### What's new in .NET Framework 4.7 (CTRL+F for TLS)
@@ -56,6 +55,71 @@ $ openssl s_server -key key.pem -cert cert.pem -accept 4433 -www -tls1
  # -tls1_2       - just use TLSv1.2
  # -tls1_1       - just use TLSv1.1
  # -tls1         - just use TLSv1
+```
+
+### Handshake specific protocol version with remote host
+
+# openssl s_client -h
+
+ # -ssl3         - just use SSLv3
+ # -tls1_2       - just use TLSv1.2
+ # -tls1_1       - just use TLSv1.1
+ # -tls1         - just use TLSv1
+
+$ openssl s_client -host pages.github.io -port 443 -servername pages.github.io -tls1_2
+
+CONNECTED(00000003)
+depth=2 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert High Assurance EV Root CA
+verify return:1
+depth=1 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 High Assurance Server CA
+verify return:1
+depth=0 C = US, ST = California, L = San Francisco, O = "GitHub, Inc.", CN = www.github.com
+verify return:1
+---
+Certificate chain
+ 0 s:/C=US/ST=California/L=San Francisco/O=GitHub, Inc./CN=www.github.com
+   i:/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA
+ 1 s:/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA
+   i:/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert High Assurance EV Root CA
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIHqDCCBpCgAwIBAgIQCDqEWS938ueVG/iHzt7JZjANBgkqhkiG9w0BAQsFADBw
+...
+3svH64hwWd1i3BZ2LTBq46MvQKU2D8wFdtXgbgRAPWohX79Oo6hs0Jghub0=
+-----END CERTIFICATE-----
+subject=/C=US/ST=California/L=San Francisco/O=GitHub, Inc./CN=www.github.com
+issuer=/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA
+---
+...
+---
+SSL handshake has read 3846 bytes and written 455 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES128-GCM-SHA256
+    Session-ID: A52008F6ABE41A22D85D83E3A2B8644C0BA17570746CDCE74FBA9B31429FB3B5
+    Session-ID-ctx:
+    Master-Key: B1648E7C5020B2B8444110AC05382FB95833DBFEDFAF3C471E39C5FB1B9DB291A0B62C301C42992DB3922AC73ED13810
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - da f6 c3 92 65 fa 83 e9-d2 66 3c 7b d2 6c 7d 7c   ....e....f<{.l}|
+    ...
+
+    Start Time: 1517480966
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+---
 ```
 
 ### Enumerate remote ciphers with `nmap`
