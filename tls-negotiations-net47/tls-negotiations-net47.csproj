@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5538FF8A-BE3E-4E5D-B021-08D07159CA70}</ProjectGuid>
+    <ProjectGuid>{5B8E54BE-2944-491E-9FFF-3A2539C85722}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>tls_negotiations</RootNamespace>
-    <AssemblyName>tls-negotiations</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <RootNamespace>tls_negotiations_net47</RootNamespace>
+    <AssemblyName>tls-negotiations-net47</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

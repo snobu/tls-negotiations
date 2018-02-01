@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tls-negotiations", "tls-negotiations\tls-negotiations.csproj", "{5538FF8A-BE3E-4E5D-B021-08D07159CA70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tls-negotiations-net45", "tls-negotiations-net45\tls-negotiations-net45.csproj", "{5538FF8A-BE3E-4E5D-B021-08D07159CA70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tls-negotiations-net46", "tls-negotiations-net46\tls-negotiations-net46.csproj", "{A3CD6885-BD7F-4E63-8A5B-5991C76F5FA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tls-negotiations-net47", "tls-negotiations-net47\tls-negotiations-net47.csproj", "{5B8E54BE-2944-491E-9FFF-3A2539C85722}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5538FF8A-BE3E-4E5D-B021-08D07159CA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5538FF8A-BE3E-4E5D-B021-08D07159CA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5538FF8A-BE3E-4E5D-B021-08D07159CA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CD6885-BD7F-4E63-8A5B-5991C76F5FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CD6885-BD7F-4E63-8A5B-5991C76F5FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CD6885-BD7F-4E63-8A5B-5991C76F5FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CD6885-BD7F-4E63-8A5B-5991C76F5FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8E54BE-2944-491E-9FFF-3A2539C85722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8E54BE-2944-491E-9FFF-3A2539C85722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8E54BE-2944-491E-9FFF-3A2539C85722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8E54BE-2944-491E-9FFF-3A2539C85722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
