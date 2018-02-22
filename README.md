@@ -182,3 +182,24 @@ ServerHello message
        ff 01 00 01 00 Extension (Renegotiation Info)
        00 23 00 00    Extension (SessionTicket TLS)
 ```
+
+### PowerShell: Invoke-WebRequest and Invoke-RestMethod
+
+```powershell
+PS> [Net.ServicePointManager]::SecurityProtocol
+Ssl3, Tls
+
+PS> Invoke-WebRequest -UseBasicParsing -Method Head https://microsoft.github.io | fl Status*
+Invoke-WebRequest : The request was aborted: Could not create SSL/TLS secure channel.
+
+PS> [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls `
+                                                  -bor [Net.SecurityProtocolType]::Tls11 `
+                                                  -bor [Net.SecurityProtocolType]::Tls12
+PS> [Net.ServicePointManager]::SecurityProtocol
+Tls, Tls11, Tls12
+
+PS> Invoke-WebRequest -UseBasicParsing -Method Head https://microsoft.github.io | fl Status*
+
+StatusCode        : 200
+StatusDescription : OK
+```
