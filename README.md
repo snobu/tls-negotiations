@@ -188,7 +188,11 @@ ServerHello message
 ```powershell
 PS> [Net.ServicePointManager]::SecurityProtocol
 Ssl3, Tls
+```
+![SSL3](https://user-images.githubusercontent.com/6472374/40024097-d96369ce-57d5-11e8-8714-f18d05475c6c.png)
+![what year is it?](https://user-images.githubusercontent.com/6472374/40023946-614059a2-57d5-11e8-8ff9-9bce64a0c5f2.gif)
 
+```powershell
 PS> Invoke-WebRequest -UseBasicParsing -Method Head https://microsoft.github.io | fl Status*
 Invoke-WebRequest : The request was aborted: Could not create SSL/TLS secure channel.
 
