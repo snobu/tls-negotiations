@@ -203,3 +203,19 @@ PS> Invoke-WebRequest -UseBasicParsing -Method Head https://microsoft.github.io 
 StatusCode        : 200
 StatusDescription : OK
 ```
+
+PowerShell Core (6.0+) has a `-SslProtocol` parameter, but shouldn't really matter since it will attempt TLS 1.2 anyway:
+```
+PS C:\Program Files\PowerShell\6-preview> Invoke-WebRequest https://microsoft.github.io -SslProtocol Tls12 | ft Status*
+
+StatusCode StatusDescription
+---------- -----------------
+       200 OK
+
+
+PS C:\Program Files\PowerShell\6-preview> Invoke-WebRequest https://microsoft.github.io | ft Status*
+
+StatusCode StatusDescription
+---------- -----------------
+       200 OK
+```
