@@ -183,7 +183,7 @@ ServerHello message
        00 23 00 00    Extension (SessionTicket TLS)
 ```
 
-### PowerShell: Invoke-WebRequest and Invoke-RestMethod
+### Windows PowerShell (5.1): Invoke-WebRequest and Invoke-RestMethod
 
 ```powershell
 PS> [Net.ServicePointManager]::SecurityProtocol
